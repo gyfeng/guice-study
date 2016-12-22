@@ -17,6 +17,18 @@ tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }
 
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Jar File Example'
+        attributes 'Implementation-Version': version
+        attributes 'Main-Class': 'team.guice.MAINClass'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
 dependencies {
 
     // Guice
