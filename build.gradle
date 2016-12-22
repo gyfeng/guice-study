@@ -5,6 +5,9 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
+// 使用jacoco生成单元测试覆盖率报告
+apply plugin: 'jacoco'
+
 // GBK编码问题
 tasks.withType(Compile) {
     options.encoding = "UTF-8"
