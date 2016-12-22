@@ -1,9 +1,18 @@
+import com.sun.org.apache.xalan.internal.xsltc.cmdline.Compile
+
 group 'team.study.guice'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
-sourceCompatibility = 1.8
+// GBK编码问题
+tasks.withType(Compile) {
+    options.encoding = "UTF-8"
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
 
 dependencies {
 
