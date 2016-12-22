@@ -14,3 +14,7 @@ out/
 # maven
 target/
 
+# gradle
+build/
+.gradle/
+
