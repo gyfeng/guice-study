@@ -16,4 +16,11 @@ public class BindingAnnotationsTest {
         BusinessService businessService = injector.getInstance(BusinessService.class);
         businessService.process();
     }
+
+    @Test
+    public void testNamedBindingAnnotations() {
+        Injector injector = Guice.createInjector(new NamedBindingAnnotationsModule());
+        NamedBusinessService businessService = injector.getInstance(NamedBusinessService.class);
+        businessService.process();
+    }
 }
