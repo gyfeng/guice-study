@@ -1,7 +1,8 @@
 package team.study.guice.bindingannotations;
 
-import com.google.inject.Inject;
-import com.google.inject.name.Named;
+import javax.inject.Inject;
+import javax.inject.Named;
+
 
 /**
  * @author GYFeng by 2016/12/23
