@@ -1,4 +1,4 @@
-package team.study.guice.linked;
+package team.study.guice.linkedbindings;
 
 /**
  * @author GYFeng by 2016/12/22

@@ -1,4 +1,4 @@
-package team.study.guice.linked;
+package team.study.guice.linkedbindings;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;

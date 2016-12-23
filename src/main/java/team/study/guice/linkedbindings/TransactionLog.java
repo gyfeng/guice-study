@@ -1,4 +1,4 @@
-package team.study.guice.linked;
+package team.study.guice.linkedbindings;
 
 /**
  * 日志记录
